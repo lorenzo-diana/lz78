@@ -1,3 +1,5 @@
+//ciaooooo
+
 /* For struct bitio
  * data buffer -> 4096
  * read and write pointer -> unsigned
