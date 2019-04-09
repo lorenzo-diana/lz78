@@ -131,12 +131,13 @@ decompress(struct param * par) {
 				in_cod=0; // we must remember the reset of the tree,used here **
 			}
 		}
-		if (ricorsiva) {	// if a recursive string have to be emitt
-			// emitt first byte of the string just emitted, in order to obtain
+		if (ricorsiva) {	// if a recursive string have to be emitted
+			// emit first byte of the string just emitted, in order to obtain
 			// a recursive string in output
 			if (1 != write(par->text_file, emissione, 1))	// if write fail
 				return -2;
 			ricorsiva=0;	// recersive string emitted, unmark recursive flag
+			contatore++;	// count how many byte we emitt
 			curr_node=temp_cod; // *
 		}
 		else
