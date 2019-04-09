@@ -1,9 +1,10 @@
+/*	Data structure and header functions of the bitio library.
+ *	For documentation about functions and structure look in bitio.c
+ */
 #ifndef _BITIO_H_12345931_
 #define _BITIO_H_12345931_
 #include<stdint.h>
-/*
- * placement of bits in the buffer
- */
+
 struct bitio;
 
 struct bitio * bit_open(const char *name, char mode);
