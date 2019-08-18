@@ -12,6 +12,6 @@ struct param {	// struct that contain all the parameter needed by the program
 	uint64_t hash_table_size;	// >= albero_size, used only in compressor
 	int text_file;				// file descriptor of standard file
 	struct bitio * bitio_file;	// file descriptor of bitio file
-	char verbose;				// 1 -> print more info
+	char verbose;				// 't' -> print more info
 };
 #endif	/* ! _LZ78_H_57385679_ */
