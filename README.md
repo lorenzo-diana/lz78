@@ -4,4 +4,4 @@ The user can change the size of the tree, internally used to implement the algor
 
 In the following image is shown the compression performance and the memory usage for different size of the tree. The input file is a 568 KB text file.
 
-<img src="tradeoff.png" width="700">
+<img src="tradeoff.png" width="1000">
