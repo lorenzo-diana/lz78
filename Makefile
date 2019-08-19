@@ -11,7 +11,7 @@ clean:
 $(BITIO_DIR):
 	if [ ! -d $(BITIO_DIR) ]; then \
 		mkdir -p $(BITIO_DIR); \
-		git clone https://github.com/lorenzo-diana/lz78 $(BITIO_DIR); \
+		git clone https://github.com/lorenzo-diana/bitiolib $(BITIO_DIR); \
 	fi
 $(BITIO_DIR)/bitio.o: $(BITIO_DIR)
 	cd $(BITIO_DIR) && make
