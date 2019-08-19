@@ -2,7 +2,11 @@
  *	it time and owner info.
  */
 
-#include "bitio.h"
+#ifdef _WIN32
+#include "bitio_lib\bitio.h"
+#else
+#include "bitio_lib/bitio.h"
+#endif
 #include "lz78.h"
 
 #include <stdlib.h>

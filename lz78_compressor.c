@@ -1,8 +1,11 @@
 /*	Provide functions and data structure to compress a file and add to it time
  *	and owner info.
  */
-
-#include "bitio.h"
+#ifdef _WIN32
+#include "bitio_lib\bitio.h"
+#else
+#include "bitio_lib/bitio.h"
+#endif
 #include "lz78.h"
 
 #include <stdlib.h>
